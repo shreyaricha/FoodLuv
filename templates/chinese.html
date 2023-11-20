@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="32x32" />
+    <title>FoodLuv : Chinese</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <a href="/chinese" class="c1"><b>Chinese</b></a>
+    <a href="/" class="c2"><b>FoodLuv</b></a>
+<a href="/cart" class="c3"><b>Cart({{ num }})</b></a>
+    <div class="card" style="width: 16rem;position:absolute;top:150px;">
+  <img class="card-img-top" src="/static/chicken.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Kung Bao Chicken<br>$2/Plate</p>
+    <button  onclick="window.location.href='/kbc'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 17rem;position:absolute;top:150px;left:500px">
+  <img class="card-img-top" src="/static/chowmow.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Chow Mein<br>$1.2/Plate</p>
+    <button  onclick="window.location.href='/cm'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 16rem;position:absolute;top:150px;left:950px">
+  <img class="card-img-top" src="/static/friedrice.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Fried Rice<br>$1.5/Plate</p>
+    <button onclick="window.location.href='/fr'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 17rem;position:absolute;top:550px">
+  <img class="card-img-top" src="/static/pasta.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Pasta<br>$1.4/Plate</p>
+    <button onclick="window.location.href='/pasta'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 17rem;position:absolute;top:550px;left:500px">
+  <img class="card-img-top" src="/static/roll.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Egg Roll<br>$1/Piece</p>
+    <button  onclick="window.location.href='/eg'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 17rem;position:absolute;top:550px;left:950px">
+  <img class="card-img-top" src="/static/momo.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Momos<br>$1.4/Plate</p>
+    <button onclick="window.location.href='/momo'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+
+  </body>
+    </html>

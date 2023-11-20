@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="32x32" />
+  <title>FoodLuv : OrderStatus</title>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="/" class="cart2"><b>FoodLuv</b></a>
+  <div style="background-color:honeydew"class="jumbotron">
+  <h1 class="display-4">Order placed!</h1>
+  <p class="lead">Your order has been received by us and it will be arriving in 24 minutes.Keep a total of {{ money }} ready in cash.</p>
+  <hr class="my-4">
+  <p>You can go to hompage by clicking the button below.</p>
+  <a href="/" class="btn btn-primary btn-lg" href="#" role="button">Homepage</a>
+</div>
+          <footer  class="small text-center text-muted">
+           Designed and developed by <a href="https://www.facebook.com/shreyarichaforfriends">shreya</a>.<br>All rights reserved.
+        </footer>
+</body>
+</html>

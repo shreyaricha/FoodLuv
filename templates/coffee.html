@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="32x32" />
+    <title>FoodLuv : Coffee Store</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <a href="/coffee" class="c1"><b>Coffee Store</b></a>
+    <a href="/" class="c2"><b>FoodLuv</b></a>
+<a href="/cart" class="c3"><b>Cart({{ num }})</b></a>
+    <div class="card" style="width: 18rem;position:absolute;top:150px;">
+  <img class="card-img-top" src="/static/latte.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Latte<br>$3/Cup</p>
+    <button onclick="window.location.href='/latte'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;position:absolute;top:150px;left:500px">
+  <img class="card-img-top" src="/static/cappuccino.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Cappuccino<br>$2.9/Cup</p>
+    <button onclick="window.location.href='/Cappuccino'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 16rem;position:absolute;top:150px;left:950px">
+  <img class="card-img-top" src="/static/espresso.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Espresso<br>$2/Cup</p>
+    <button onclick="window.location.href='/Espresso'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 19rem;position:absolute;top:550px">
+  <img class="card-img-top" src="/static/americano.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Americano<br>$2.2/Cup</p>
+    <button onclick="window.location.href='/Americano'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;position:absolute;top:550px;left:500px">
+  <img class="card-img-top" src="/static/mocha.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Mocha<br>$2.5/Cup</p>
+    <button onclick="window.location.href='/Mocha'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+<div class="card" style="width: 16rem;position:absolute;top:550px;left:950px">
+  <img class="card-img-top" src="/static/machhiato.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p style="text-align:left;font-family: cursive;font-size: x-large;" class="card-text">Machhiato<br>$2.6/Cup</p>
+    <button onclick="window.location.href='/Machhiato'" type="button" class="btn btn-outline-success">Add to cart</button>
+  </div>
+</div>
+
+
+
+    </body>
+    </html>

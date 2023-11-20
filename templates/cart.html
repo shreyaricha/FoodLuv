@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="32x32" />
+  <title>FoodLuv : Cart</title>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="/" class="cart2"><b>FoodLuv</b></a>
+  <a href="/cart" class="cart1"><b>Cart</b></a>
+  <p class="greet"> Ready for placing your order? <p>
+  <table style="position:absolute;top:200px;width:1200px" class="table table-hover table-dark">
+    <thead>
+    <tr>
+        <th>Food name</th>
+        <th>Amt.</th>
+        <th>Total Price</th>
+        <th>After discount</th>
+        <th>TOTAL</th>
+
+    </tr>
+</thead>
+{% for cart in carts %}
+            <tr>
+
+                <td>{{ cart.foodname }}</td>
+                <td> {{ cart.foodnum }}  </td>
+                <td>${{ cart.total }} </td>
+                <td>${{ cart.afterdis }}  </td>
+                <td>${{ cart.afterdis }}  </td>
+            </tr>
+            {% endfor %}
+            <tr>
+            <b><td>TOTAL PRICE</td></b>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <span style="font-weight:bold">${{ total }} </span> </td>
+            </tr>
+
+</table>
+<button onclick="window.location.href='/order'" style="position:absolute;left:500px;" type="button" class="btn btn-outline-success">Place Order</button>
+
+</body>
+</html>

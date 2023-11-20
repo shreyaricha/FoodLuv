@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="32x32" />
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <a href="/" class="regf"><b>FoodLuv</b></a>
+    <p class="reg"><b>REGISTER HERE FOR FREE</b></p>
+    <form action="/register" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="userid">Username</label>
+          <input type="text" class="form-control" name="username" placeholder="Username">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" name="address" placeholder="1234 Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" name="address2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" name="city">
+        </div>
+      </div>
+
+      <button type="submit" id="register" class="btn btn-primary">Register</button>
+    </form>
+          <footer  class="small text-center text-muted">
+           Designed and developed by <a href="https://www.facebook.com/shreyarichaforfriends">shreya</a>.<br>All rights reserved.
+        </footer>
+        <script>
+          document.getElementById("register").onclick = function () {
+        alert("Registered Successfully!");
+    }
+        </script>
+  </body>
+
+  </html>

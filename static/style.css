@@ -1,0 +1,76 @@
+body {
+  background-image:url('background1.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:40px;
+}
+.reg {
+  font-size:xx-large;
+  font-family:cursive;
+  text-align: left;
+  color:orange;
+}
+.regf {
+  font-size:xxx-large;
+  font-family: cursive;
+  text-align:center;
+  color: red;
+}
+.head {
+  font-size:xxx-large;
+  font-family: cursive;
+  text-align:center;
+  color:red;
+  position:absolute;
+  top:120px;
+  left:830px;
+}
+.c1 {
+  font-size: xxx-large;
+  font-family: cursive;
+  position:absolute;
+  top:40px;
+  left:500px;
+  font-family: cursive;
+  color:chocolate;
+}
+.c2 {
+  font-size: xxx-large;
+  font-family: cursive;
+  position:absolute;
+  top:40px;
+  color:red;
+
+}
+.c3 {
+  font-size:xxx-large;
+  font-family: cursive;
+  position:absolute;
+  left:1000px;
+  color:green;
+}
+.cart1 {
+  font-size:xxx-large;
+  color:green;
+  font-family: cursive;
+  position:absolute;
+  top:40px;
+  left:60px;
+}
+.cart2 {
+  font-size: xxx-large;
+  color:red;
+  font-family: cursive;
+  position: absolute;
+  top:40px;
+  left:1000px;
+}
+.greet {
+  font-size: xx-large;
+  color:black;
+  font-family: cursive;
+  position:absolute;
+  top:125px;
+  left:50px;
+}
